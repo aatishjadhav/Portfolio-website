@@ -26,7 +26,7 @@ const Work = () => {
                 BuyNest Ecommerce App
               </span>
               <div className="pt-8 text-center">
-                <a href="https://buynest-46jp.onrender.com/">
+                <a href="https://buynest-frontend-olive.vercel.app/">
                   <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
                     Demo
                   </button>
@@ -48,7 +48,7 @@ const Work = () => {
                 Workasana
               </span>
               <div className="pt-8 text-center">
-                <a href="https://workasana.onrender.com/">
+                <a href="https://workasana-frontend-pink.vercel.app/">
                   <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
                     Demo
                   </button>
@@ -70,7 +70,7 @@ const Work = () => {
                 Anvaya CRM
               </span>
               <div className="pt-8 text-center">
-                <a href="https://anvaya-crm.onrender.com/">
+                <a href="https://anvaya-frontend-peach.vercel.app/">
                   <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
                     Demo
                   </button>
