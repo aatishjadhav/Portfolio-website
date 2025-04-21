@@ -1,6 +1,4 @@
 import React from "react";
-import ecom from "../assets/projects/ecom.png";
-import cw from "../assets/projects/cw.png";
 import port from "../assets/projects/port.png";
 import todo from "../assets/projects/todo.png";
 import anvaya from "../assets/projects/anvaya.png";
