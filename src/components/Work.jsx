@@ -3,6 +3,9 @@ import ecom from "../assets/projects/ecom.png";
 import cw from "../assets/projects/cw.png";
 import port from "../assets/projects/port.png";
 import todo from "../assets/projects/todo.png";
+import anvaya from "../assets/projects/anvaya.png";
+import home from "../assets/projects/home.png";
+import workasana from "../assets/projects/workasana.png";
 
 const Work = () => {
   return (
@@ -17,20 +20,20 @@ const Work = () => {
 
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
           <div
-            style={{ backgroundImage: `url(${ecom})` }}
+            style={{ backgroundImage: `url(${home})` }}
             className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div"
           >
             <div className="opacity-0 group-hover:opacity-100">
               <span className="text-2xl font-bold text-white tracking-wider">
-                Procart Ecommerce App
+                BuyNest Ecommerce App
               </span>
               <div className="pt-8 text-center">
-                <a href="https://pro-cart.onrender.com/">
+                <a href="https://buynest-46jp.onrender.com/">
                   <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
                     Demo
                   </button>
                 </a>
-                <a href="https://github.com/aatishjadhav/Pro-Cart">
+                <a href="https://github.com/aatishjadhav/BuyNest">
                   <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
                     Code
                   </button>
@@ -39,20 +42,42 @@ const Work = () => {
             </div>
           </div>
           <div
-            style={{ backgroundImage: `url(${cw})` }}
+            style={{ backgroundImage: `url(${workasana})` }}
             className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div"
           >
             <div className="opacity-0 group-hover:opacity-100">
               <span className="text-2xl font-bold text-white tracking-wider">
-                Crypto Watcher
+                Workasana
               </span>
               <div className="pt-8 text-center">
-                <a href="https://crypto-watcherr.netlify.app/">
+                <a href="https://workasana.onrender.com/">
                   <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
                     Demo
                   </button>
                 </a>
-                <a href="https://github.com/aatishjadhav/Crypto-Watcher">
+                <a href="https://github.com/aatishjadhav/Workasana">
+                  <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
+                    Code
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div
+            style={{ backgroundImage: `url(${anvaya})` }}
+            className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div"
+          >
+            <div className="opacity-0 group-hover:opacity-100">
+              <span className="text-2xl font-bold text-white tracking-wider">
+                Anvaya CRM
+              </span>
+              <div className="pt-8 text-center">
+                <a href="https://anvaya-crm.onrender.com/">
+                  <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
+                    Demo
+                  </button>
+                </a>
+                <a href="https://github.com/aatishjadhav/Anvaya-CRM">
                   <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
                     Code
                   </button>
