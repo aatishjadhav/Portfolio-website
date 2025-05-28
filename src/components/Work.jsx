@@ -1,9 +1,10 @@
 import React from "react";
 import port from "../assets/projects/port.png";
 import todo from "../assets/projects/todo.png";
-import anvaya from "../assets/projects/anvaya.png";
+import anvaya1 from "../assets/projects/anvaya1.png";
 import home from "../assets/projects/home.png";
 import workasana from "../assets/projects/workasana.png";
+
 
 const Work = () => {
   return (
@@ -62,7 +63,7 @@ const Work = () => {
             </div>
           </div>
           <div
-            style={{ backgroundImage: `url(${anvaya})` }}
+            style={{ backgroundImage: `url(${anvaya1})` }}
             className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div"
           >
             <div className="opacity-0 group-hover:opacity-100">
