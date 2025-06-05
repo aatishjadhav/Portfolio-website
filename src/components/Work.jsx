@@ -1,137 +1,97 @@
 import React from "react";
-import port from "../assets/projects/port.png";
+import portfolio from "../assets/projects/portfolio.png";
 import todo from "../assets/projects/todo.png";
 import anvaya1 from "../assets/projects/anvaya1.png";
 import home from "../assets/projects/home.png";
 import workasana from "../assets/projects/workasana.png";
 
+const Projects = () => {
+  const projects = [
+    {
+      id: 1,
+      image: home,
+      demoLink: "https://buynest-frontend-olive.vercel.app/",
+      codeLink: "https://github.com/aatishjadhav/BuyNest",
+    },
+    {
+      id: 2,
+      image: anvaya1,
+      demoLink: "https://anvaya-frontend-peach.vercel.app/",
+      codeLink: "https://github.com/aatishjadhav/Anvaya-CRM",
+    },
+    {
+      id: 3,
+      image: workasana,
+      demoLink: "https://workasana-frontend-pink.vercel.app/",
+      codeLink: "https://github.com/aatishjadhav/Workasana",
+    },
+    // {
+    //   id: 4,
+    //   image: SnakeGame,
+    //   demoLink: "https://glowing-profiterole-a5e3e6.netlify.app",
+    //   codeLink: "https://github.com/prathambhalke/Snake_game",
+    // },
 
-const Work = () => {
+    {
+      id: 4,
+      image: portfolio,
+      demoLink: "https://atishs-portfolio.netlify.app/",
+      codeLink: "https://github.com/aatishjadhav/Portfolio-website",
+    },
+    {
+      id: 5,
+      image: todo,
+      demoLink: "https://todos-priority.netlify.app/",
+      codeLink: "https://github.com/aatishjadhav/Todo-CRUD-Vanilla-JS",
+    },
+  ];
+
   return (
-    <div name="work" className="w-full md:h-screen text-gray-300 bg-[#0a192f]">
-      <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full">
+    <div
+      name="Projects"
+      className="bg-gradient-to-b from-black to-gray-800 pt-[10%] w-full sm:h-screen md:h-screen text-white"
+    >
+      <div className="max-w-screen-lg p-2 mx-auto flex flex-col justify-center w-full h-full">
         <div className="pb-8">
-          <p className="text-4xl font-bold inline border-b-4 text-gray-300 border-pink-600">
-            Work
+          <p className="text-4xl font-bold inline border-b-4 border-gray-500">
+            Projects
           </p>
-          <p className="py-6"> Check out some of my recent work</p>
+
+          <p className="py-6">Check out some of my work right here</p>
         </div>
 
-        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
-          <div
-            style={{ backgroundImage: `url(${home})` }}
-            className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div"
-          >
-            <div className="opacity-0 group-hover:opacity-100">
-              <span className="text-2xl font-bold text-white tracking-wider">
-                BuyNest Ecommerce App
-              </span>
-              <div className="pt-8 text-center">
-                <a href="https://buynest-frontend-olive.vercel.app/">
-                  <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
-                    Demo
-                  </button>
+        <div className="grid sm-grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
+          {projects.map(({ id, image, demoLink, codeLink }) => {
+            return (
+              <div key={id} className="shadow-md shadow-gray-600 rounded-lg">
+                <a href={demoLink} target="_blank">
+                  <img
+                    src={image}
+                    alt="project-images"
+                    className="rounded-md duration-200 hover:scale-105"
+                  />
                 </a>
-                <a href="https://github.com/aatishjadhav/BuyNest">
-                  <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
-                    Code
+
+                <div className="flex items-center justify-center">
+                  <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105 hover:text-orange-500">
+                    {" "}
+                    <a href={demoLink} target="_blank">
+                      Demo
+                    </a>
                   </button>
-                </a>
+                  <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105 hover:text-orange-500">
+                    <a href={codeLink} target="_blank">
+                      Code
+                    </a>
+                  </button>
+                </div>
               </div>
-            </div>
-          </div>
-          <div
-            style={{ backgroundImage: `url(${workasana})` }}
-            className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div"
-          >
-            <div className="opacity-0 group-hover:opacity-100">
-              <span className="text-2xl font-bold text-white tracking-wider">
-                Workasana
-              </span>
-              <div className="pt-8 text-center">
-                <a href="https://workasana-frontend-pink.vercel.app/">
-                  <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
-                    Demo
-                  </button>
-                </a>
-                <a href="https://github.com/aatishjadhav/Workasana">
-                  <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
-                    Code
-                  </button>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div
-            style={{ backgroundImage: `url(${anvaya1})` }}
-            className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div"
-          >
-            <div className="opacity-0 group-hover:opacity-100">
-              <span className="text-2xl font-bold text-white tracking-wider">
-                Anvaya CRM
-              </span>
-              <div className="pt-8 text-center">
-                <a href="https://anvaya-frontend-peach.vercel.app/">
-                  <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
-                    Demo
-                  </button>
-                </a>
-                <a href="https://github.com/aatishjadhav/Anvaya-CRM">
-                  <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
-                    Code
-                  </button>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div
-            style={{ backgroundImage: `url(${port})` }}
-            className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div"
-          >
-            <div className="opacity-0 group-hover:opacity-100">
-              <span className="text-2xl font-bold text-white tracking-wider">
-                Portfolio Website
-              </span>
-              <div className="pt-8 text-center">
-                <a href="https://atishs-portfolio.netlify.app/">
-                  <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
-                    Demo
-                  </button>
-                </a>
-                <a href="https://github.com/aatishjadhav/Portfolio-website">
-                  <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
-                    Code
-                  </button>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div
-            style={{ backgroundImage: `url(${todo})` }}
-            className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div"
-          >
-            <div className="opacity-0 group-hover:opacity-100">
-              <span className="text-2xl font-bold text-white tracking-wider">
-                Todo-CRUD 
-              </span>
-              <div className="pt-8 text-center">
-                <a href="https://todos-priority.netlify.app/">
-                  <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
-                    Demo
-                  </button>
-                </a>
-                <a href="https://github.com/aatishjadhav/Todo-CRUD-Vanilla-JS">
-                  <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
-                    Code
-                  </button>
-                </a>
-              </div>
-            </div>
-          </div>
+            );
+          })}
         </div>
       </div>
     </div>
   );
 };
 
-export default Work;
+export default Projects;
