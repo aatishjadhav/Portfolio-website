@@ -32,7 +32,9 @@ const Navbar = () => {
     <div className="flex justify-between items-center w-full h-16  px-4 z-10 bg-black text-white fixed">
       <div>
         <h1 className="text-5xl font-signature ml-2 mt-3 hover:text-orange-400 duration-500">
-          <a href="#">Atish</a>
+          <Link to="Home" smooth duration={500}>
+            Atish
+          </Link>
         </h1>
       </div>
 

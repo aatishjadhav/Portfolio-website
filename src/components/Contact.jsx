@@ -60,29 +60,9 @@ const Contact = () => {
   return (
     <div
       name="Contact"
-      className="w-full sm:h-screen bg-gradient-to-b from-gray-800 to-black text-white p-4 pt-72"
+      className="w-full sm:h-screen bg-gradient-to-b from-gray-800 to-black text-white p-4 pt-24"
     >
-      <div className=" md:hidden flex justify-center items-center bottom-[35%]">
-        <ul className="flex justify-center items-center">
-          {social.map(({ id, color, child, link }) => {
-            return (
-              <li
-                key={id}
-                className={`flex justify-center items-center h-1/1 mt-[-10%] py-3 px-2  hover:rounded-md hover:mt-[-15%] duration-500 ${color} cursor-pointer`}
-              >
-                <a
-                  className="flex text-white font-bold"
-                  href={link}
-                  download="true"
-                  target="_blank"
-                >
-                  {child}
-                </a>
-              </li>
-            );
-          })}
-        </ul>
-      </div>
+     
 
       <div className="flex flex-col p-4 justify-center max-w-lg mx-auto h-full">
         <div className="pb-2">
