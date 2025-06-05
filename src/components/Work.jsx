@@ -1,15 +1,15 @@
 import React from "react";
 import portfolio from "../assets/projects/portfolio.png";
 import todo from "../assets/projects/todo.png";
-import anvaya1 from "../assets/projects/anvaya1.png";
-import home from "../assets/projects/home.png";
-import workasana from "../assets/projects/workasana.png";
+import anvaya1 from "../assets/projects/anvaya2.png";
+import buynest from "../assets/projects/buynest1.png";
+import workasana from "../assets/projects/tasklane.png";
 
 const Projects = () => {
   const projects = [
     {
       id: 1,
-      image: home,
+      image: buynest,
       demoLink: "https://buynest-frontend-olive.vercel.app/",
       codeLink: "https://github.com/aatishjadhav/BuyNest",
     },
@@ -65,22 +65,35 @@ const Projects = () => {
             return (
               <div key={id} className="shadow-md shadow-gray-600 rounded-lg">
                 <a href={demoLink} target="_blank" rel="noopener noreferrer">
-                  <img
+                  {/* <img
                     src={image}
                     alt="project-images"
                     className="rounded-md duration-200 hover:scale-105"
+                  /> */}
+                  <img
+                    src={image}
+                    alt="project screenshot"
+                    className="rounded-md duration-200 hover:scale-105 w-full h-48 object-cover"
                   />
                 </a>
 
                 <div className="flex items-center justify-center">
                   <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105 hover:text-orange-500">
                     {" "}
-                    <a href={demoLink} target="_blank" rel="noopener noreferrer">
+                    <a
+                      href={demoLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       Demo
                     </a>
                   </button>
                   <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105 hover:text-orange-500">
-                    <a href={codeLink} target="_blank" rel="noopener noreferrer">
+                    <a
+                      href={codeLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       Code
                     </a>
                   </button>
