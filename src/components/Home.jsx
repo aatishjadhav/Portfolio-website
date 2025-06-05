@@ -57,7 +57,7 @@ const Home = () => {
         <div className="sm:w-1/2">
           <img
             src={Hero}
-            alt="profile image"
+            alt="profile"
             className="rounded-2xl mx-auto w-full max-w-md sm:max-w-sm md:max-w-md"
           />
         </div>

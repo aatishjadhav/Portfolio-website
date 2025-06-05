@@ -1,5 +1,5 @@
 import React from "react";
-import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { AiOutlineMail } from "react-icons/ai";
 import { BsPersonLinesFill } from "react-icons/bs";
 
@@ -71,6 +71,7 @@ const SocialLinks = () => {
                   href={link}
                   download="true"
                   target="_blank"
+                  rel="noopener noreferrer"
                 >
                   {child}
                 </a>

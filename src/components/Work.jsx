@@ -64,7 +64,7 @@ const Projects = () => {
           {projects.map(({ id, image, demoLink, codeLink }) => {
             return (
               <div key={id} className="shadow-md shadow-gray-600 rounded-lg">
-                <a href={demoLink} target="_blank">
+                <a href={demoLink} target="_blank" rel="noopener noreferrer">
                   <img
                     src={image}
                     alt="project-images"
@@ -75,12 +75,12 @@ const Projects = () => {
                 <div className="flex items-center justify-center">
                   <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105 hover:text-orange-500">
                     {" "}
-                    <a href={demoLink} target="_blank">
+                    <a href={demoLink} target="_blank" rel="noopener noreferrer">
                       Demo
                     </a>
                   </button>
                   <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105 hover:text-orange-500">
-                    <a href={codeLink} target="_blank">
+                    <a href={codeLink} target="_blank" rel="noopener noreferrer">
                       Code
                     </a>
                   </button>
