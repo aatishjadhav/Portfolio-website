@@ -4,6 +4,7 @@ import todo from "../assets/projects/todo.png";
 import anvaya1 from "../assets/projects/anvaya2.png";
 import buynest from "../assets/projects/buynest1.png";
 import workasana from "../assets/projects/tasklane.png";
+import chat from "../assets/projects/chat.png";
 
 const Projects = () => {
   const projects = [
@@ -25,12 +26,12 @@ const Projects = () => {
       demoLink: "https://workasana-frontend-pink.vercel.app/",
       codeLink: "https://github.com/aatishjadhav/Workasana",
     },
-    // {
-    //   id: 4,
-    //   image: SnakeGame,
-    //   demoLink: "https://glowing-profiterole-a5e3e6.netlify.app",
-    //   codeLink: "https://github.com/prathambhalke/Snake_game",
-    // },
+    {
+      id: 4,
+      image: chat,
+      demoLink: "https://chatrix-nine.vercel.app/",
+      codeLink: "https://github.com/aatishjadhav/Chatrix",
+    },
 
     {
       id: 4,
