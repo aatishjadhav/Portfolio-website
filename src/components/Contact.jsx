@@ -1,69 +1,11 @@
 import React from "react";
-import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
-import { AiOutlineMail } from "react-icons/ai";
-import { BsPersonLinesFill } from "react-icons/bs";
 
 const Contact = () => {
-  let social = [
-    {
-      id: 1,
-      color: "bg-blue-600",
-      child: (
-        <>
-          <FaLinkedin size={30} className="ml-2 text-white" />
-        </>
-      ),
-      link: "https://www.linkedin.com/in/prathameshb11",
-    },
-    {
-      id: 2,
-      color: "bg-gray-600",
-      child: (
-        <>
-          <FaGithub size={30} className="ml-2 text-white" />
-        </>
-      ),
-      link: "https://github.com/prathambhalke",
-    },
-    {
-      id: 3,
-      color: "bg-red-600",
-      child: (
-        <>
-          <AiOutlineMail size={30} className="ml-2 text-white" />
-        </>
-      ),
-      link: "mailto:bhalkeprathamesh11@gmail.com",
-    },
-    {
-      id: 4,
-      color: "bg-blue-500",
-      child: (
-        <>
-          <FaTwitter size={30} className="ml-2 text-white" />
-        </>
-      ),
-      link: "https://twitter.com/prathambhalke",
-    },
-    {
-      id: 5,
-      color: "bg-green-500",
-      child: (
-        <>
-          <BsPersonLinesFill size={30} className="ml-2 text-white" />
-        </>
-      ),
-      link: "https://drive.google.com/file/d/1n65gJbXbO1LS18M9wQdrJqJg_5hWrWZ4/view?usp=sharing",
-    },
-  ];
-
   return (
     <div
       name="Contact"
       className="w-full sm:h-screen bg-gradient-to-b from-gray-800 to-black text-white p-4 pt-24"
     >
-     
-
       <div className="flex flex-col p-4 justify-center max-w-lg mx-auto h-full">
         <div className="pb-2">
           <p className="text-4xl font-bold inline border-b-4 border-gray-500">
