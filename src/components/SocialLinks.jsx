@@ -44,7 +44,7 @@ const SocialLinks = () => {
           Resume <BsPersonLinesFill size={30} className="ml-2 text-white" />
         </>
       ),
-      link: "https://drive.google.com/file/d/1ee5ztjUP9TxXi1IsFtF5HSr_aDQ5KZ6q/view?usp=sharing",
+      link: "https://drive.google.com/file/d/1bHTY8GR8sdQnWN5Lw-kQ4Ey9hQeZKQ1w/view?usp=sharing",
     },
   ];
   return (

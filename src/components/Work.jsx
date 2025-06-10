@@ -1,8 +1,8 @@
 import React from "react";
 import portfolio from "../assets/projects/portfolio.png";
 import todo from "../assets/projects/todo.png";
-import anvaya1 from "../assets/projects/anvaya2.png";
-import buynest from "../assets/projects/buynest1.png";
+import anvaya1 from "../assets/projects/mp2.png";
+import buynest from "../assets/projects/mp1.png";
 import workasana from "../assets/projects/tasklane.png";
 import chat from "../assets/projects/chat.png";
 
@@ -50,10 +50,10 @@ const Projects = () => {
   return (
     <div
       name="Projects"
-      className="bg-gradient-to-b from-black to-gray-800 pt-[10%] w-full sm:h-screen md:h-screen text-white"
+      className="bg-gradient-to-b from-black to-gray-800 w-full sm:h-screen md:h-screen text-white"
     >
       <div className="max-w-screen-lg p-2 mx-auto flex flex-col justify-center w-full h-full">
-        <div className="pb-8">
+        <div className="pb-8 py-10">
           <p className="text-4xl font-bold inline border-b-4 border-gray-500">
             Projects
           </p>
@@ -61,7 +61,7 @@ const Projects = () => {
           <p className="py-6">Check out some of my work right here</p>
         </div>
 
-        <div className="grid sm-grid-cols-2 md:grid-cols-3 gap-8 px-12 py-8 sm:px-0 sm:mb-12">
+        <div className="grid sm-grid-cols-2 md:grid-cols-3 gap-8 px-12 py-10 sm:px-0 sm:mb-24">
           {projects.map(({ id, image, demoLink, codeLink }) => {
             return (
               <div key={id} className="shadow-md shadow-gray-600 rounded-lg">
