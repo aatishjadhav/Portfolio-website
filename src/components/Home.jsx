@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-scroll";
 import { FaArrowRight } from "react-icons/fa";
-import Hero from "../assets/atish2.jpg";
+import Hero from "../assets/a.jpg";
 import { Typewriter } from "react-simple-typewriter";
 
 const Home = () => {

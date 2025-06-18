@@ -1,5 +1,6 @@
 import React from "react";
 import blog1 from "../assets/closures.png"
+import blog2 from "../assets/hoc.png"
 
 
 const Blogs = () => {
@@ -9,11 +10,11 @@ const Blogs = () => {
       image: blog1,
       demoLink: "https://medium.com/@atishjadhav835/closures-in-javascript-a0d38f24b91f",
     },
-    // {
-    //   id: 2,
-    //   image: blog2,
-    //   demoLink: "https://medium.com/@prathameshbhalke125/currying-in-javascript-9be9dc23d57c",
-    // },
+    {
+      id: 2,
+      image: blog2,
+      demoLink: "https://medium.com/@atishjadhav835/higher-order-components-hocs-in-javascript-b36063920949",
+    },
   ];
 
   return (
